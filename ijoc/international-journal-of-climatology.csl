@@ -31,6 +31,7 @@
   </macro>
   <macro name="author-short">
     <names variable="author">
+    <et-al font-style="italic"/>
       <name form="short" and="text" delimiter=", " initialize-with=". "/>
       <substitute>
         <names variable="editor"/>
@@ -172,7 +173,7 @@
       <text variable="locator" prefix=": "/>
     </layout>
   </citation>
-  <bibliography et-al-min="99" et-al-use-first="98" hanging-indent="false" entry-spacing="1" line-spacing="1">
+  <bibliography hanging-indent="false" entry-spacing="1" line-spacing="1">
     <sort>
       <key macro="author"/>
       <key macro="year-date"/>
