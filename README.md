@@ -1,4 +1,4 @@
 zotero-csl
 ==========
 
-Zotero csl files
+A collection of Zotero .csl files for various journals.
