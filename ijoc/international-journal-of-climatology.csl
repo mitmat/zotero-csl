@@ -2,27 +2,21 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" default-locale="en-US">
   <info>
     <title>International Journal of Climatology</title>
-    <id>http://www.zotero.org/styles/intl-journal-of-climatology</id>
-	<!--> 
-    <link href="http://www.zotero.org/styles/the-holocene" rel="self"/>
-    <link href="http://www.zotero.org/styles/sage-harvard" rel="template"/>
-    <link href="http://hol.sagepub.com/" rel="documentation"/>
-	<-->
+    <id>http://www.zotero.org/styles/international-journal-of-climatology</id>
+    <link href="http://www.zotero.org/styles/international-journal-of-climatology" rel="self"/>
+    <link href="http://www.zotero.org/styles/the-holocene" rel="template"/>
+    <link href="http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0088/homepage/ForAuthors.html#reference_style" rel="documentation"/>
     <author>
       <name>Michael Matiu</name>
       <email>matiu@wzw.tum.de</email>
-      <uri></uri>
     </author>
 	<category citation-format="author-date"/>
     <category field="climatology"/>
-	<updated>2013-10-09T12:00:00+00:00</updated>
-	<!--> 
-    <issn>0959-6836</issn>
-    <eissn>1477-0911</eissn>
-    <summary>The Holocene citation style.</summary>
-    
+	<updated>09:19 31.07.2014</updated>
+    <issn>0899-8418</issn>
+    <eissn>1097-0088</eissn>
+    <summary>The International Journal of Climatology citation style.</summary>   
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
-	<-->
   </info>
   <macro name="author">
     <names variable="author">
