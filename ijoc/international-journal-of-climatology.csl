@@ -52,13 +52,20 @@
   <macro name="container-contributors">
     <choose>
       <if type="chapter paper-conference" match="any">
-        <text term="in" text-case="capitalize-first" suffix=": "/>
-        <names variable="editor translator" delimiter=", " suffix=" ">
+        <names variable="editor translator" delimiter=", " prefix = " [" suffix="]">
           <name and="text" initialize-with="" delimiter=", " sort-separator=" " name-as-sort-order="all" delimiter-precedes-last="never"/>
-          <label form="short" prefix=" (" suffix=")" strip-periods="true"/>
+          <label form="short" prefix=" (" suffix=")" strip-periods="false"/>
         </names>
       </if>
     </choose>
+  </macro>
+  <macro name="container-title">
+    <choose>
+      <if type="chapter paper-conference" match="any">
+        <text term="in" text-case="capitalize-first" suffix=": "/>
+      </if>
+    </choose>
+    <text variable="container-title" font-style="italic"/>
   </macro>
   <macro name="access">
     <choose>
@@ -103,6 +110,13 @@
       <if variable="event">
         <text term="presented at" prefix="paper " suffix=" "/>
         <text variable="event"/>
+      </if>
+    </choose>
+  </macro>
+  <macro name="book-series">
+     <choose>
+      <if variable="collection-title">
+        <text variable="collection-title"/>
       </if>
     </choose>
   </macro>
@@ -185,14 +199,19 @@
         <text macro="year-date"/>
         <text macro="title"/>
       </group>
-      <text macro="container-contributors"/>
+      <group suffix=". ">
+        <text macro="container-title"/>
+        <text macro="container-contributors"/>
+      </group>
       <group delimiter=". ">
-        <text variable="container-title" font-style="italic"/>
+        <text macro="book-series"/>
         <text macro="event"/>
         <text macro="publisher"/>
       </group>
-      <text macro="locators"/>
-      <text variable="DOI" prefix=". DOI: "/>
+      <group delimiter=". ">
+        <text macro="locators"/>
+        <text variable="DOI" prefix="DOI: "/>
+      </group>
     </layout>
   </bibliography>
 </style>
